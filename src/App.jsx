@@ -10,7 +10,7 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const addToCart = (item) => {
-    setCart([...cart, item]);
+    setCart((prevCart) => [...prevCart, item]);
   };
 
   const filteredProducts =

@@ -6,7 +6,7 @@ function Cart({ cart }) {
       {cart.length === 0 && <p>Your cart is empty</p>}
 
       {cart.map((item, index) => (
-        <p key={index}>{item.name} is in your cart</p>
+        <p key={`${item.id}-${index}`}>{item.name} is in your cart</p>
       ))}
 
       {/* ⭐ Bonus: Cart Total */}
